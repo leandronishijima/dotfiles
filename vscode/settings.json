@@ -1,0 +1,217 @@
+{
+  "workbench.editor.enablePreview": false,
+  "window.title": "${activeEditorLong}${separator}${rootName}",
+  "files.autoSave": "off",
+  "vim.hlsearch": true,
+  "vim.useCtrlKeys": true,
+  "vim.disableExtension": false,
+  "vim.useSystemClipboard": true,
+  "vim.leader": "<space>",
+  "vim.sneak": true,
+  "vim.easymotion": true,
+  "vim.easymotionDimBackground": false,
+  "vim.easymotionMarkerBackgroundColor": "#E3BE23",
+  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#111111",
+  "vim.easymotionMarkerForegroundColorOneChar": "#111111",
+  "vim.easymotionKeys": "sadjklewcmpgh",
+  "vim.statusBarColorControl": false,
+  "vim.handleKeys": {
+    // Select all
+    "<C-a>": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        ":w"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "commands": [
+        ":q"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "wq"
+      ],
+      "commands": [
+        ":wq"
+      ]
+    },
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.focus",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "e"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.toggleSidebarVisibility",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f"
+      ],
+      "commands": [
+        {
+          "command": "revealInExplorer",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g"
+      ],
+      "commands": [
+        {
+          "command": "workbench.view.scm",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.splitEditor",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c"
+      ],
+      "commands": [
+        "editor.action.commentLine",
+      ],
+    },
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "c"
+      ],
+      "commands": [
+        "editor.action.commentLine",
+        "extension.vim_escape"
+      ],
+    }
+  ],
+  "editor.fontFamily": "FuraCode Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "[*.lock]": {
+    "editor.formatOnSave": false
+  },
+  "[*.dart]": {
+    "editor.formatOnSave": false
+  },
+  "editor.formatOnPaste": true,
+  "editor.cursorBlinking": "phase",
+  "editor.quickSuggestions": false,
+  "editor.linkedEditing": true,
+  "files.trimFinalNewlines": true,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "window.titleBarStyle": "custom",
+  "javascript.validate.enable": false,
+  "sync.gist": "c8dfdff320f1212189fa55753d1ee6ab",
+  "git.autofetch": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "dart.autoImportCompletions": false,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.tabSize": 2,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideTabs": false,
+  "zenMode.hideStatusBar": false,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f"
+  },
+  "emmet.includeLanguages": {
+    "html-eex": "html"
+  },
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "codeui.targetingMode": "themeSpecific",
+  "vsicons.dontShowNewVersionMessage": true,
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "elixirLS.suggestSpecs": false,
+  "elixirLS.fetchDeps": false,
+  "vim.enableNeovim": true,
+  "extensions.ignoreRecommendations": true,
+  "pauseSlackNotifications": false,
+  "slackAwayStatus": false,
+  "slackAwayStatusText": "CodeTime!",
+  "screenMode": "Full Screen",
+  "bracket-pair-colorizer-2.activeScopeCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {LightSkyBlue}",
+    "opacity: 0.5"
+  ],
+  "vim.debug.silent": true,
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "name": {
+        "highlight": "grey"
+      }
+    }
+  },
+  "tabnine.experimentalAutoImports": true,
+  "workbench.colorTheme": "dark+(elixir)"
+}

@@ -1,0 +1,58 @@
+{
+	"IEx.pry": {
+		"scope": "elixir",
+		"prefix": "pry",
+		"body": [
+			"require IEx; IEx.pry"
+		],
+		"description": "IEx.pry debug"
+	},
+	"df": {
+		"scope": "elixir",
+		"prefix": "df",
+		"body": "def $1, do: $0",
+		"description": "def (one line)",
+	},
+	"describe": {
+		"scope": "elixir",
+		"prefix": "desc",
+		"body": "describe \"$1\" do\n\n  test \"when...$2\" do\n   $3  \n  end\nend",
+		"description": "describe test template",
+	},
+	"describe with setup": {
+		"scope": "elixir",
+		"prefix": "descs",
+		"body": "describe \"$1\" do\n  setup :$2\n\n  test \"when...$3\" do\n   $4  \n  end\nend",
+		"description": "describe test template",
+	},
+	"test": {
+		"scope": "elixir",
+		"prefix": "test",
+		"body": "test \"$1\" do\n  assert 1 == 1\nend",
+		"description": "test template",
+	},
+	"test with context": {
+		"scope": "elixir",
+		"prefix": "tests",
+		"body": "test \"$1\", %{conn: conn, $2: $3} do\n  assert 1 == 1\nend",
+		"description": "test template with context param",
+	},
+	"IO.inspect!": {
+		"scope": "elixir",
+		"prefix": "ii",
+		"body": "IO.inspect($1, label: \"!!!!!!! INSPECT$2\")",
+		"description": "IO.inspect"
+	},
+	"defd": {
+		"scope": "elixir",
+		"prefix": "defd",
+		"body": "defdelegate $0,\n  to: $1,\n  as: :$2",
+		"description": "defdelegate",
+	},
+	"dgettext": {
+		"scope": "elixir",
+		"prefix": "dget",
+		"body": "dgettext(\"$0\", \"$1\")>",
+		"description": "dgettext",
+	}
+}
