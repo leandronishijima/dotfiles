@@ -31,3 +31,10 @@ ln -s ~/.dotfiles/vscode/snippets/elixir.json ~/.config/Code/User/snippets/elixi
 ln -s ~/.dotfiles/vscode/snippets/html-eex.json ~/.config/Code/User/snippets/html-eex.json
 ln -s ~/.dotfiles/vscode/snippets/.ex.code-snippets ~/.config/Code/User/snippets/.ex.code-snippets
 ```
+
+## Ulauncher
+
+```
+ln -s ~/.dotfiles/ulauncher/settings.json ~/.config/ulauncher/settings.json
+ln -s ~/.dotfiles/ulauncher/extensions.json ~/.config/ulauncher/extenions.json
+```
