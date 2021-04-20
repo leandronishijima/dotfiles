@@ -1,0 +1,30 @@
+{
+    "com.github.compilelife.ulauncher-searchfile": {
+        "url": "https://github.com/compilelife/ulauncher-searchfile",
+        "last_commit_time": "2018-07-31T01:15:44Z",
+        "id": "com.github.compilelife.ulauncher-searchfile",
+        "updated_at": "2019-01-29T08:37:11.143958",
+        "last_commit": "af69a3f041c20cf3d07368e35da63ae35fc3dc74"
+    },
+    "com.github.jasdent.ulauncher-snip": {
+        "id": "com.github.jasdent.ulauncher-snip",
+        "url": "https://github.com/Jasdent/ulauncher-snip",
+        "updated_at": "2020-07-15T11:23:19.762318",
+        "last_commit": "938f0b050649f108d58fddca5e4fea08afcf43f5",
+        "last_commit_time": "2019-10-21T15:19:52"
+    },
+    "com.github.brpaz.ulauncher-decode": {
+        "url": "https://github.com/brpaz/ulauncher-decode",
+        "last_commit_time": "2018-09-20T18:50:39Z",
+        "id": "com.github.brpaz.ulauncher-decode",
+        "updated_at": "2019-01-29T08:35:16.821793",
+        "last_commit": "94c6eee64e7de8913c5251e6c50739265a32923a"
+    },
+    "com.github.manahter.ulauncher-translate": {
+        "id": "com.github.manahter.ulauncher-translate",
+        "url": "https://github.com/manahter/ulauncher-translate",
+        "updated_at": "2021-01-26T10:45:57.289906",
+        "last_commit": "38cf20f4621704b26a1e866d066ccb6a2acac5f2",
+        "last_commit_time": "2020-11-21T21:26:56"
+    }
+}
