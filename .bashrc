@@ -121,3 +121,6 @@ fi
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 . $HOME/z/z.sh
+
+# VS code path
+export PATH=$PATH:/usr/share/code/bin/

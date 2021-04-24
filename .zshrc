@@ -118,8 +118,14 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
 
+# asdf path
 . $HOME/.asdf/asdf.sh
+
+# z path
 . $HOME/z/z.sh
+
+# VS code path
+export PATH=$PATH:/usr/share/code/bin/
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then

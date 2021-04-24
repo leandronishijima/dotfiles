@@ -21,3 +21,10 @@ ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/ulauncher/settings.json ~/.config/ulauncher/settings.json
 ln -s ~/.dotfiles/ulauncher/extensions.json ~/.config/ulauncher/extenions.json
 ```
+
+## zsh and bash
+
+```
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
+ln -s ~/.dotfiles/.zbashrc ~/.bashrc
+```
