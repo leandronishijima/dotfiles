@@ -1,0 +1,6 @@
+font:
+  normal:
+    family: FiraCode
+
+import:
+  - /home/leandro/.dotfiles/alacritty/dracula.yml
