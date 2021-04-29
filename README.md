@@ -26,5 +26,11 @@ ln -s ~/.dotfiles/ulauncher/extensions.json ~/.config/ulauncher/extenions.json
 
 ```
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
-ln -s ~/.dotfiles/.zbashrc ~/.bashrc
+ln -s ~/.dotfiles/.bashrc ~/.bashrc
+```
+
+## inotify
+
+```
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 ```
