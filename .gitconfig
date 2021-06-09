@@ -1,3 +1,6 @@
 [user]
 	email = 4566637+leandronishijima@users.noreply.github.com
 	name = Leandro Nishijima
+	signingkey = D4F6A8470A5930722591C1E7EFBA72443E5E419F
+[commit]
+	gpgsign = true
