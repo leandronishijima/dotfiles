@@ -1,17 +1,76 @@
+# Configurarion for Alacritty, the GPU enhanced terminal emulator
+
+env:
+  # TERM env customization.
+  #
+  # If this property is not set, alacritty will set it to xterm-256color.
+  #
+  # Note that some xterm terminfo databases don't declare support for italics.
+  # You can verify this by checking for the presence of `smso` and `sitm` in
+  # `infocmp xterm-256color`.
+  TERM: xterm-256color
+
 window:
+  opacity: 0.9
+  dynammic_title: true
+
+  # Window dimensions (changes require restart)
   dimensions:
     columns: 0
     lines: 0
 
+  # Window padding
+  #
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 2
-    y: 2
+    x: 10
+    y: 10
 
-  decorations: full
+  dpi:
+    x: 96.0
+    y: 96.0
+
+  # Window decorations
+  #
+  # Values for `decorations`:
+  #     - full: Borders and title bar
+  #     - none: Neither borders nor title bar
+  #
+  # Values for `decorations` (macOS only):
+  #     - transparent: Title bar, transparent background and title bar buttons
+  #     - buttonless: Title bar, transparent background, but no title bar buttons
+  decorations: buttonless
+
+  startup_mode: Maximized
+  
+draw_bold_text_with_bright_colors: true
 
 font:
   normal:
-    family: FiraCode
+    family: JetBrainsMono Nerd Font
+
+  bold:
+    family: JetBrainsMono Nerd Font
+    style: Bold
+
+  italic:
+    family: JetBrainsMono Nerd Font
+    style: Light
+
+  # Point size of the font
+  size: 14.0
+
+cursor:
+  # Cursor style
+  #
+  # Values for `style`:
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  syle: Beam
+
+live_config_reload: true
 
 import:
-  - /home/leandro/.dotfiles/alacritty/dracula.yml
+  - /Users/leandro/.dotfiles/alacritty/dracula.yml
