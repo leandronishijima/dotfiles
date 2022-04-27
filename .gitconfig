@@ -1,0 +1,13 @@
+[user]
+	email = 4566637+leandronishijima@users.noreply.github.com
+	name = Leandro Nishijima
+	signingkey = 0F27E745524CD73B
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg2
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
