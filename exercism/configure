@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exercism configure -w $HOME/workspace/exercism
