@@ -1,0 +1,10 @@
+#!/bin/bash
+
+asdf plugin-add dart https://github.com/PatOConnor43/asdf-dart.git
+asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
+asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
+asdf plugin-add flutter https://github.com/oae/asdf-flutter.git
+asdf plugin-add java https://github.com/halcyon/asdf-java.git
+asdf plugin-add neovim https://github.com/richin13/asdf-neovim.git
+asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf plugin-add python https://github.com/danhper/asdf-python.git
