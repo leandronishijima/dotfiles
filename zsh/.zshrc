@@ -114,7 +114,7 @@ alias vim="nvim"
 alias nvim="nvim ."
 
 # exa aliases
-alias ls="exa --tree --level=1 --icons" 
+alias ls="exa -a --group-directories-first --tree --level=1 --icons" 
 
 # tmux aliases
 alias t="tmux"
