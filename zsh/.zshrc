@@ -1,9 +1,13 @@
+# Fig pre block. Keep at the top of this file.
+. "$HOME/.fig/shell/zshrc.pre.zsh"
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+
+export GPG_TTY=$(tty)
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -125,9 +129,8 @@ alias gpl="git pull"
 alias gpu="git push"
 alias ga="git add ."
 
-# elixir custom alias
-alias deps="mix deps.get"
-alias test="mix test"
+# docker aliases
+alias docker ps="docker container ls -a"
 
 SPACESHIP_PROMPT_ORDER=(
   user          # Username section
@@ -159,6 +162,16 @@ export PATH=$PATH:/usr/share/code/bin/
 
 # libqpath (postgresql cli)
 export PATH="/opt/homebrew/Cellar/libpq/13.3/bin:$PATH"
+
+# Ruby dev env
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+export LDFLAGS="-L/opt/homebrew/opt/readline/lib:$LDFLAGS"
+export CPPFLAGS="-I/opt/homebrew/opt/readline/include:$CPPFLAGS"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/readline/lib/pkgconfig:$PKG_CONFIG_PATH"
+export optflags="-Wno-error=implicit-function-declaration"
+export LDFLAGS="-L/opt/homebrew/opt/libffi/lib:$LDFLAGS"
+export CPPFLAGS="-I/opt/homebrew/opt/libffi/include:$CPPFLAGS"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/libffi/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
