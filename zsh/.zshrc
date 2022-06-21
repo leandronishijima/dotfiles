@@ -114,7 +114,7 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="nvim ~/.zshrc"
 
 # vim aliases
-alias vim="nvim"
+alias vim="nvim ."
 alias nvim="nvim ."
 
 # exa aliases

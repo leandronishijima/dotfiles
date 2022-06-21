@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# kitty
+ln -s ~/.dotfiles/.config/kitty/kitty.conf $HOME/.config/kitty/kitty.conf
+
+# neofetch
+ln -s ~/.dotfiles/neofetch/config.conf $HOME/.config/neofetch/config.conf
+
+# tmux
+ln -s ~/.dotfiles/.tmux.conf $HOME/.tmux.conf
+
