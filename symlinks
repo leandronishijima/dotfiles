@@ -13,3 +13,6 @@ ln -s ~/.dotfiles/.tmux.conf $HOME/.tmux.conf
 ln -s ~/.dotfiles/zsh/.zshrc $HOME/.zshrc
 ln -s ~/.dotfiles/zsh/.p10k.zsh $HOME/.p10k.zsh
 
+# ranger
+ln -s ~/.dotfiles/.config/ranger/rc.conf $HOME/.config/ranger/rc.conf
+

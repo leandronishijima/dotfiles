@@ -139,6 +139,11 @@ alias docker ps="docker container ls -a"
 # replacing cat
 alias cat="bat"
 
+# elixir aliases
+alias mt="mix test"
+alias md="mix deps.get"
+alias mph="iex -S mix phx.server"
+
 SPACESHIP_PROMPT_ORDER=(
   user          # Username section
   dir           # Current directory section
