@@ -169,6 +169,11 @@ SPACESHIP_CHAR_SUFFIX=" "
 # z path
 . $(brew --prefix)/etc/profile.d/z.sh
 
+# nvm path
+export NVM_DIR="$HOME/.nvm"
+    [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
+    [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+
 # VS code path
 export PATH=$PATH:/usr/share/code/bin/
 
