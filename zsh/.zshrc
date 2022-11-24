@@ -111,6 +111,9 @@ source $ZSH/oh-my-zsh.sh
 
 alias zshconfig="nvim ~/.zshrc"
 
+# vscode shortcut
+alias code="code ."
+
 # vim aliases
 alias vim="nvim ."
 alias nvim="nvim ."
@@ -126,6 +129,7 @@ alias gs="git status"
 alias gpl="git pull"
 alias gpu="git push"
 alias ga="git add ."
+alias gc="git checkout"
 
 # kitty alias
 alias tabname="kitty @ set-tab-title"
