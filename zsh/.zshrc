@@ -138,7 +138,7 @@ alias tabname="kitty @ set-tab-title"
 alias :q="exit"
 
 # docker aliases
-alias docker ps="docker container ls -a"
+alias dls="docker container ls -a"
 
 # replacing cat
 alias cat="bat"
