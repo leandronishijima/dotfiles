@@ -148,6 +148,9 @@ alias mt="mix test"
 alias md="mix deps.get"
 alias mph="iex -S mix phx.server"
 
+# mytime aliases
+alias mytime_webpack="./node_modules/.bin/webpack-dev-server --config config/webpack.config.js --inline --hot --max-old-space-size=4096"
+
 SPACESHIP_PROMPT_ORDER=(
   user          # Username section
   dir           # Current directory section
@@ -235,3 +238,24 @@ zinit light-mode for \
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+#compdef gt
+###-begin-gt-completions-###
+#
+# yargs command completion script
+#
+# Installation: /opt/homebrew/bin/gt completion >> ~/.zshrc
+#    or /opt/homebrew/bin/gt completion >> ~/.zprofile on OSX.
+#
+_gt_yargs_completions()
+{
+  local reply
+  local si=$IFS
+  IFS=$'
+' reply=($(COMP_CWORD="$((CURRENT-1))" COMP_LINE="$BUFFER" COMP_POINT="$CURSOR" /opt/homebrew/bin/gt --get-yargs-completions "${words[@]}"))
+  IFS=$si
+  _describe 'values' reply
+}
+compdef _gt_yargs_completions gt
+###-end-gt-completions-###
+
+export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
