@@ -148,6 +148,10 @@ alias mt="mix test"
 alias md="mix deps.get"
 alias mph="iex -S mix phx.server"
 
+# ruby/rails aliases
+# Rails console without autocomplete
+alias railsc="rails c -- --noautocomplete"
+
 # mytime aliases
 alias mytime_webpack="./node_modules/.bin/webpack-dev-server --config config/webpack.config.js --inline --hot --max-old-space-size=4096"
 
@@ -175,6 +179,9 @@ SPACESHIP_CHAR_SUFFIX=" "
 
 # z path
 . $(brew --prefix)/etc/profile.d/z.sh
+
+# Docker platform
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
 
 # nvm path
 export NVM_DIR="$HOME/.nvm"
