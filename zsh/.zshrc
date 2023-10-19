@@ -130,6 +130,7 @@ alias gpl="git pull"
 alias gpu="git push"
 alias ga="git add ."
 alias gc="git checkout"
+alias lgit="lazygit"
 
 # kitty alias
 alias tabname="kitty @ set-tab-title"
@@ -152,8 +153,10 @@ alias mph="iex -S mix phx.server"
 # Rails console without autocomplete
 alias railsc="rails c -- --noautocomplete"
 
-# mytime aliases
+# MyTime aliases
 alias mytime_webpack="./node_modules/.bin/webpack-dev-server --config config/webpack.config.js --inline --hot --max-old-space-size=4096"
+alias whitelist="./myaws whitelist"
+alias connect="./myaws connect"
 
 SPACESHIP_PROMPT_ORDER=(
   user          # Username section
