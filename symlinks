@@ -16,3 +16,5 @@ ln -s ~/.dotfiles/zsh/.p10k.zsh $HOME/.p10k.zsh
 # ranger
 ln -s ~/.dotfiles/.config/ranger/rc.conf $HOME/.config/ranger/rc.conf
 
+# solargraph
+ln -s ~/.dotfiles/.config/solargraph/config.yml $HOME/.config/solargraph/config.yml

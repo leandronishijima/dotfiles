@@ -1,0 +1,12 @@
+include:
+  - "apps/**/*.rb"
+exclude:
+  - apps/**/db/**/*
+  - spec/**/*
+  - test/**/*
+  - vendor/**/*
+  - ".bundle/**/*"
+reporters:
+- rubocop
+- require_not_found
+max_files: 0
