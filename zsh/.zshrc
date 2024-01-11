@@ -111,15 +111,15 @@ source $ZSH/oh-my-zsh.sh
 
 alias zshconfig="nvim ~/.zshrc"
 
-# vscode shortcut
-alias code="code ."
-
 # vim aliases
 alias vim="NVIM_APPNAME=lazyvim nvim ."
 alias nvim="NVIM_APPNAME=lazyvim nvim ."
 
 # exa aliases
 alias ls="exa -a --group-directories-first --tree --level=1 --icons" 
+
+# replacing grep to ripgrep
+alias grep="rg"
 
 # tmux aliases
 alias t="tmux"
