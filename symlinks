@@ -18,3 +18,6 @@ ln -s ~/.dotfiles/.config/ranger/rc.conf $HOME/.config/ranger/rc.conf
 
 # solargraph
 ln -s ~/.dotfiles/.config/solargraph/config.yml $HOME/.config/solargraph/config.yml
+
+# Lazygit
+ln -s ~/.dotfiles/lazygit/config.yml ~/Library/Application\ Support/lazygit/config.yml
