@@ -269,3 +269,6 @@ compdef _gt_yargs_completions gt
 ###-end-gt-completions-###
 
 export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
+
+# Start mcfly
+eval "$(mcfly init zsh)"
