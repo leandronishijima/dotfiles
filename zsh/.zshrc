@@ -158,6 +158,9 @@ alias mytime_webpack="./node_modules/.bin/webpack-dev-server --config config/web
 alias whitelist="./myaws whitelist"
 alias connect="./myaws connect"
 
+# csvlens alias
+alias csv="csvlens"
+
 SPACESHIP_PROMPT_ORDER=(
   user          # Username section
   dir           # Current directory section
@@ -204,8 +207,7 @@ export PATH="/opt/homebrew/Cellar/libpq/13.3/bin:$PATH"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export LDFLAGS="-L/opt/homebrew/opt/readline/lib:$LDFLAGS"
 export CPPFLAGS="-I/opt/homebrew/opt/readline/include:$CPPFLAGS"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/readline/lib/pkgconfig:$PKG_CONFIG_PATH"
-export optflags="-Wno-error=implicit-function-declaration"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/readline/lib/pkgconfig:$PKG_CONFIG_PATH" export optflags="-Wno-error=implicit-function-declaration"
 export LDFLAGS="-L/opt/homebrew/opt/libffi/lib:$LDFLAGS"
 export CPPFLAGS="-I/opt/homebrew/opt/libffi/include:$CPPFLAGS"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/libffi/lib/pkgconfig:$PKG_CONFIG_PATH"
@@ -270,5 +272,10 @@ compdef _gt_yargs_completions gt
 
 export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
 
-# Start mcfly
+# McFly configs
+
+export MCFLY_KEY_SCHEME=vim
+export MCFLY_RESULTS=50
+export MCFLY_RESULTS_SORT=LAST_RUN
+export MCFLY_PROMPT="❯"
 eval "$(mcfly init zsh)"
