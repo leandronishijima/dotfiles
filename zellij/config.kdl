@@ -22,14 +22,14 @@ keybinds {
     }
     pane {
         bind "Ctrl p" { SwitchToMode "Normal"; }
-        bind "h" "Left" { MoveFocus "Left"; }
-        bind "l" "Right" { MoveFocus "Right"; }
-        bind "j" "Down" { MoveFocus "Down"; }
-        bind "k" "Up" { MoveFocus "Up"; }
+        bind "h" "Left" { MoveFocus "Left"; SwitchToMode "Normal"; }
+        bind "l" "Right" { MoveFocus "Right"; SwitchToMode "Normal"; }
+        bind "j" "Down" { MoveFocus "Down"; SwitchToMode "Normal"; }
+        bind "k" "Up" { MoveFocus "Up"; SwitchToMode "Normal"; }
         bind "p" { SwitchFocus; }
         bind "n" { NewPane; SwitchToMode "Normal"; }
-        bind "d" { NewPane "Down"; SwitchToMode "Normal"; }
-        bind "r" { NewPane "Right"; SwitchToMode "Normal"; }
+        bind "-" { NewPane "Down"; SwitchToMode "Normal"; }
+        bind "|" { NewPane "Right"; SwitchToMode "Normal"; }
         bind "x" { CloseFocus; SwitchToMode "Normal"; }
         bind "f" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
         bind "z" { TogglePaneFrames; SwitchToMode "Normal"; }
@@ -83,7 +83,7 @@ keybinds {
         // bind "Alt c" { Copy; }
     }
     search {
-        bind "Ctrl s" { SwitchToMode "Normal"; }
+        bind "Ctrl f" { SwitchToMode "Normal"; }
         bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
         bind "j" "Down" { ScrollDown; }
         bind "k" "Up" { ScrollUp; }
@@ -204,7 +204,7 @@ plugins {
 //    - true
 //    - false (Default)
 //
-// simplified_ui true
+simplified_ui true
 
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
@@ -220,7 +220,7 @@ plugins {
 //   - true (default)
 //   - false
 //
-// pane_frames true
+pane_frames false
 
 // Toggle between having Zellij lay out panes according to a predefined set of layouts whenever possible
 // Options:
@@ -253,25 +253,25 @@ plugins {
 // Once these themes are defined, one of them should to be selected in the "theme" section of this file
 //
 // themes {
-//     dracula {
-//         fg 248 248 242
-//         bg 40 42 54
-//         red 255 85 85
-//         green 80 250 123
-//         yellow 241 250 140
-//         blue 98 114 164
-//         magenta 255 121 198
-//         orange 255 184 108
-//         cyan 139 233 253
-//         black 0 0 0
-//         white 255 255 255
-//     }
-// }
+//      dracula {
+//          fg 248 248 242
+//          bg 40 42 54
+//          red 255 85 85
+//          green 80 250 123
+//          yellow 241 250 140
+//          blue 98 114 164
+//          magenta 255 121 198
+//          orange 255 184 108
+//          cyan 139 233 253
+//          black 0 0 0
+//          white 255 255 255
+//      }
+//  }
 
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-// theme "default"
+theme "tokyo-night"
 
 // The name of the default layout to load on startup
 // Default: "default"
