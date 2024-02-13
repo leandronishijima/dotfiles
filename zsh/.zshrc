@@ -124,6 +124,9 @@ alias grep="rg"
 # tmux aliases
 alias t="tmux"
 
+# Zellij aliases
+alias zj="zellij"
+
 # git custom alias
 alias gs="git status"
 alias gpl="git pull"
