@@ -1,19 +1,14 @@
 # dotfiles
 
 ## Checkout
-
 ```
 git clone git@github.com:leandronishijima/dotfiles.git ~/.dotfiles
 ```
-
 ## inotify
-
 ```
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 ```
-
 ## tmux
-
 ```
 $ which tic
 
@@ -24,4 +19,10 @@ $ /usr/bin/tic -xe tmux-256color terminfo.src
 $ sudo /usr/bin/tic -xe tmux-256color terminfo.src
 
 $ infocmp -x tmux-256color
+```
+## MacOS
+```
+$ networksetup -listallnetworkservice
+$ networksetup -setv6off WiFi
+$ networksetup -setv6off "USB 10/100/1000 LAN"
 ```
