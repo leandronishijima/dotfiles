@@ -5,11 +5,10 @@ keybinds {
         // bind "Alt c" { Copy; }
         unbind "Ctrl h"
         unbind "Ctrl s"
-        bind "Ctrl 1" { GoToTab 1 }
-        bind "Ctrl 2" { GoToTab 2 }
-        bind "Ctrl 3" { GoToTab 3 }
-        bind "Ctrl 4" { GoToTab 4 }
-        bind "Ctrl 5" { GoToTab 5 }
+        unbind "Alt s"
+        unbind "Ctrl b"
+        unbind "Ctrl q"
+        bind "Ctrl a" { SwitchToMode "Move"; }
     }
     locked {
         bind "Ctrl g" { SwitchToMode "Normal"; }
@@ -117,7 +116,7 @@ keybinds {
         bind "Esc" { UndoRenamePane; SwitchToMode "Pane"; }
     }
     session {
-        bind "Ctrl o" { SwitchToMode "Normal"; }
+        bind "Ctrl b" { SwitchToMode "Normal"; }
         bind "Ctrl s" { SwitchToMode "Scroll"; }
         bind "d" { Detach; }
         bind "w" {
@@ -130,7 +129,7 @@ keybinds {
     }
     tmux {
         bind "[" { SwitchToMode "Scroll"; }
-        bind "Ctrl b" { Write 2; SwitchToMode "Normal"; }
+        bind "Ctrl y" { Write 2; SwitchToMode "Normal"; }
         bind "\"" { NewPane "Down"; SwitchToMode "Normal"; }
         bind "%" { NewPane "Right"; SwitchToMode "Normal"; }
         bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
