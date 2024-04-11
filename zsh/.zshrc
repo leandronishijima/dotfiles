@@ -282,3 +282,19 @@ export MCFLY_RESULTS=50
 export MCFLY_RESULTS_SORT=LAST_RUN
 export MCFLY_PROMPT="❯"
 eval "$(mcfly init zsh)"
+
+# Execution time
+
+function preexec() {
+  timer=$(($(gdate +%s%0N)/1000000))
+}
+
+function precmd() {
+  if [ $timer ]; then
+    now=$(($(gdate +%s%0N)/1000000))
+    elapsed=$(($now-$timer))
+
+    export RPROMPT="%F{cyan}${elapsed}ms %{$reset_color%}"
+    unset timer
+  fi
+}
