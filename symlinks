@@ -32,3 +32,6 @@ ln -s ~/asdf/.asdfrc $HOME/.asdfrc
 # Zellij
 ln -s ~/.dotfiles/zellij/config.kdl $HOME/.config/zellij/config.kdl
 ln -s ~/.dotfiles/zellij/themes/themes.kdl $HOME/.config/zellij/themes/themes.kdl
+
+# Wezterm
+ln -s ~/.dotfiles/wezterm/wezterm.lua $HOME/.wezterm.lua
