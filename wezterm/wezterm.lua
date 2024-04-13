@@ -29,7 +29,7 @@ config.font_rules = {
 		intensity = "Bold",
 		italic = true,
 		font = wezterm.font({
-			family = "Victor Mono",
+			family = "VictorMono Nerd Font Mono",
 			weight = "Bold",
 			style = "Italic",
 		}),
@@ -38,7 +38,7 @@ config.font_rules = {
 		italic = true,
 		intensity = "Half",
 		font = wezterm.font({
-			family = "Victor Mono",
+			family = "VictorMono Nerd Font Mono",
 			weight = "DemiBold",
 			style = "Italic",
 		}),
@@ -47,7 +47,7 @@ config.font_rules = {
 		italic = true,
 		intensity = "Normal",
 		font = wezterm.font({
-			family = "Victor Mono",
+			family = "VictorMono Nerd Font Mono",
 			weight = "Medium",
 			style = "Italic",
 		}),
