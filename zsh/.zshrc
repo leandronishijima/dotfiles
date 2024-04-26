@@ -115,8 +115,9 @@ alias zshconfig="nvim ~/.zshrc"
 alias vim="NVIM_APPNAME=lazyvim nvim ."
 alias nvim="NVIM_APPNAME=lazyvim nvim ."
 
-# exa aliases
-alias ls="exa -a --group-directories-first --tree --level=1 --icons" 
+# Eza aliases
+alias ls="eza -a --group-directories-first --tree --level=1 --icons" 
+alias ll="eza -al --group-directories-first --long --color=always --icons=always"
 
 # replacing grep to ripgrep
 alias grep="rg"
@@ -275,14 +276,6 @@ compdef _gt_yargs_completions gt
 
 export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
 
-# McFly configs
-
-export MCFLY_KEY_SCHEME=vim
-export MCFLY_RESULTS=50
-export MCFLY_RESULTS_SORT=LAST_RUN
-export MCFLY_PROMPT="❯"
-eval "$(mcfly init zsh)"
-
 # Execution time
 
 function preexec() {
@@ -298,3 +291,6 @@ function precmd() {
     unset timer
   fi
 }
+
+# Autuin config
+eval "$(atuin init zsh)"

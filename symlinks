@@ -35,3 +35,7 @@ ln -s ~/.dotfiles/zellij/themes/themes.kdl $HOME/.config/zellij/themes/themes.kd
 
 # Wezterm
 ln -s ~/.dotfiles/wezterm/wezterm.lua $HOME/.wezterm.lua
+
+# Atuin
+rm $HOME/.config/atuin/config.toml && ln -s ~/.dotfiles/.config/atuin/config.toml $HOME/.config/atuin/c
+onfig.toml
