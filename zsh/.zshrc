@@ -216,6 +216,9 @@ export LDFLAGS="-L/opt/homebrew/opt/libffi/lib:$LDFLAGS"
 export CPPFLAGS="-I/opt/homebrew/opt/libffi/include:$CPPFLAGS"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/libffi/lib/pkgconfig:$PKG_CONFIG_PATH"
 
+# Node/Javascript dev env
+export NODE_OPTIONS=--openssl-legacy-provider
+
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
