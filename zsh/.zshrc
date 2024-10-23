@@ -112,10 +112,11 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="nvim ~/.zshrc"
 
 # vim aliases
-alias vim="NVIM_APPNAME=lazyvim nvim ."
-alias nvim="NVIM_APPNAME=lazyvim nvim ."
+alias vim="NVIM_APPNAME=lazyvim nvim"
+alias nvim="NVIM_APPNAME=lazyvim nvim"
 
 # Eza aliases
+alias l="eza -a --icons" 
 alias ls="eza -a --group-directories-first --tree --level=1 --icons" 
 alias ll="eza -al --group-directories-first --long --color=always --icons=always"
 
@@ -129,6 +130,7 @@ alias t="tmux"
 alias zj="zellij"
 
 # git custom alias
+alias g="git"
 alias gs="git status"
 alias gpl="git pull"
 alias gpu="git push"
@@ -156,6 +158,7 @@ alias mph="iex -S mix phx.server"
 # ruby/rails aliases
 # Rails console without autocomplete
 alias railsc="rails c -- --noautocomplete"
+alias r="rails"
 
 # MyTime aliases
 alias mytime_webpack="./node_modules/.bin/webpack-dev-server --config config/webpack.config.js --inline --hot --max-old-space-size=4096"
