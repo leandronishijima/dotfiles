@@ -2,8 +2,13 @@
 	email = 4566637+leandronishijima@users.noreply.github.com
 	name = Leandro Nishijima
 	signingkey = 0F27E745524CD73B
+
+[includeIf "gitdir:/Users/leandro/workspace/arionkoder/iseatz/"]
+  path = .gitconfig-iseatz
+
 [commit]
 	gpgsign = true
+
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
 [filter "lfs"]
