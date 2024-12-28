@@ -39,3 +39,6 @@ ln -s ~/.dotfiles/wezterm/wezterm.lua $HOME/.wezterm.lua
 # Atuin
 rm $HOME/.config/atuin/config.toml && ln -s ~/.dotfiles/.config/atuin/config.toml $HOME/.config/atuin/c
 onfig.toml
+
+# Ghostty
+ln -s ~/.dotfiles/.config/ghostty/config $HOME/.config/ghostty/config
