@@ -2,6 +2,8 @@ theme = "Ayu Mirage"
 window-decoration = false
 window-vsync = true
 macos-titlebar-style = hidden
+window-save-state = always
+macos-option-as-alt = true
 
 font-size = 11.5
 font-synthetic-style = bold
@@ -10,3 +12,4 @@ font-style = bold
 font-family = "JetBrainsMono Nerd Font"
 font-family-italic = "VictorMono Nerd Font Mono"
 font-family-bold-italic = "VictorMono Nerd Font Mono"
+font-thicken = false
