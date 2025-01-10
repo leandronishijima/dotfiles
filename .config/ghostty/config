@@ -6,10 +6,11 @@ window-save-state = always
 macos-option-as-alt = true
 
 font-size = 11.5
-font-synthetic-style = bold
+font-family = "JetBrainsMono Nerd Font"
+# font-synthetic-style = bold
 font-style = bold
 
-font-family = "JetBrainsMono Nerd Font"
-font-family-italic = "VictorMono Nerd Font Mono"
-font-family-bold-italic = "VictorMono Nerd Font Mono"
-font-thicken = false
+# font-family-italic = "VictorMono Nerd Font Mono"
+# font-family-bold-italic = "VictorMono NFM Bold Italic"
+
+font-thicken = true
