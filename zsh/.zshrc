@@ -160,11 +160,6 @@ alias mph="iex -S mix phx.server"
 alias railsc="rails c -- --noautocomplete"
 alias r="rails"
 
-# MyTime aliases
-alias mytime_webpack="./node_modules/.bin/webpack-dev-server --config config/webpack.config.js --inline --hot --max-old-space-size=4096"
-alias whitelist="./myaws whitelist"
-alias connect="./myaws connect"
-
 # csvlens alias
 alias csv="csvlens"
 
@@ -187,8 +182,7 @@ SPACESHIP_CHAR_SYMBOL="𝝺"
 SPACESHIP_CHAR_SUFFIX=" "
 
 # asdf path
-# . $HOME/.asdf/asdf.sh
-. $(brew --prefix)/opt/asdf/libexec/asdf.sh
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # z path
 . $(brew --prefix)/etc/profile.d/z.sh
