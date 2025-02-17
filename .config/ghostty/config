@@ -4,8 +4,8 @@ theme = "Ayu Mirage"
 window-decoration = false
 window-vsync = true
 window-save-state = always
-window-padding-x = 25
-window-padding-y = 25
+window-padding-x = 20
+window-padding-y = 20
 
 # MacOS specific settings
 macos-option-as-alt = true
@@ -21,3 +21,5 @@ font-family = "JetBrainsMono Nerd Font"
 # font-family-italic = "VictorMono Nerd Font Mono"
 # font-family-bold-italic = "VictorMono NFM Bold Italic"
 
+# Keybinds
+keybind = ctrl+t>t=toggle_quick_terminal
