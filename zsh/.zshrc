@@ -187,8 +187,7 @@ SPACESHIP_CHAR_SYMBOL="𝝺"
 SPACESHIP_CHAR_SUFFIX=" "
 
 # asdf path
-# . $HOME/.asdf/asdf.sh
-. $(brew --prefix)/opt/asdf/libexec/asdf.sh
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # z path
 . $(brew --prefix)/etc/profile.d/z.sh
@@ -283,9 +282,10 @@ compdef _gt_yargs_completions gt
 export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
 
 # Execution time
-
+DISABLE_AUTO_TITLE="true"
 function preexec() {
   timer=$(($(gdate +%s%0N)/1000000))
+  print -Pn "\e]0;🚀 $(print -rD $PWD) $1 🚀\a"
 }
 
 function precmd() {
@@ -297,6 +297,9 @@ function precmd() {
     unset timer
   fi
 }
+precmd
+
+# Disable auto-setting terminal title.
 
 # Autuin config
 eval "$(atuin init zsh)"
