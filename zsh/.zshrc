@@ -285,7 +285,7 @@ export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
 DISABLE_AUTO_TITLE="true"
 function preexec() {
   timer=$(($(gdate +%s%0N)/1000000))
-  print -Pn "\e]0;🚀 $(print -rD $PWD) $1 🚀\a"
+  print -Pn "\e]0;$(print -rD $PWD) $1\a"
 }
 
 function precmd() {
