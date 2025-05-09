@@ -42,3 +42,6 @@ onfig.toml
 
 # Ghostty
 ln -s ~/.dotfiles/.config/ghostty/config $HOME/.config/ghostty/config
+
+# Aerospace
+ln -s ~/.dotfiles/aerospace/.aerospace.toml $HOME/.aerospace.toml
