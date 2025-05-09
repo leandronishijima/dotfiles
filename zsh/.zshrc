@@ -115,6 +115,7 @@ alias zshconfig="nvim ~/.zshrc"
 # vim aliases
 alias vim="NVIM_APPNAME=lazyvim nvim"
 alias nvim="NVIM_APPNAME=lazyvim nvim"
+alias v="nvim"
 
 # Eza aliases
 alias l="eza -a --icons" 
