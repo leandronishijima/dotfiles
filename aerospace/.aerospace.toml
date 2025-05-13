@@ -48,6 +48,7 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
 if.app-id = "com.mitchellh.ghostty"
 run = [
+  'layout floating',
   "move-node-to-workspace W",
 ]
 
@@ -63,10 +64,10 @@ run = "move-node-to-workspace O"
 if.app-name-regex-substring = 'com.apple.ActivityMonitor'
 run = "layout floating"
 
-[[on-window-detected]]
-if.workspace = 'workspace W'
-check-further-callbacks = false
-run = 'layout floating'
+# [[on-window-detected]]
+# if.workspace = 'workspace W'
+# check-further-callbacks = false
+# run = 'layout floating'
 
 # # Possible values: (qwerty|dvorak|colemak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
