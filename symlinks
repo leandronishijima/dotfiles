@@ -45,3 +45,11 @@ ln -s ~/.dotfiles/.config/ghostty/config $HOME/.config/ghostty/config
 
 # Aerospace
 ln -s ~/.dotfiles/aerospace/.aerospace.toml $HOME/.aerospace.toml
+
+# Sketchybar
+ln -s ~/.dotfiles/sketchybar/sketchybarrc $HOME/.config/sketchybar/sketchybarrc
+ln -s ~/.dotfiles/sketchybar/colors.sh $HOME/.config/sketchybar/colors.sh
+ln -s ~/.dotfiles/sketchybar/icons.sh $HOME/.config/sketchybar/icons.sh
+ln -s ~/.dotfiles/sketchybar/plugins/ $HOME/.config/sketchybar/
+ln -s ~/.dotfiles/sketchybar/items/ $HOME/.config/sketchybar/
+ln -s ~/.dotfiles/sketchybar/helper/ $HOME/.config/sketchybar/
