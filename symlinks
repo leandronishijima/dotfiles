@@ -29,6 +29,9 @@ ln -s ~/.dotfiles/lazygit/config.yml ~/Library/Application\ Support/lazygit/conf
 ln -s ~/.dotfiles/.default-gems $HOME/.default-gems
 ln -s ~/asdf/.asdfrc $HOME/.asdfrc
 
+# mise
+ln -s ~/.dotfiles/mise/config.toml $HOME/.config/mise/config.toml
+
 # Zellij
 ln -s ~/.dotfiles/zellij/config.kdl $HOME/.config/zellij/config.kdl
 ln -s ~/.dotfiles/zellij/themes/themes.kdl $HOME/.config/zellij/themes/themes.kdl

@@ -188,9 +188,6 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="𝝺"
 SPACESHIP_CHAR_SUFFIX=" "
 
-# asdf path
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-
 # z path
 . $(brew --prefix)/etc/profile.d/z.sh
 
@@ -210,15 +207,6 @@ export PATH=$PATH:/usr/share/code/bin/
 
 # libqpath (postgresql cli)
 export PATH="/opt/homebrew/Cellar/libpq/13.3/bin:$PATH"
-
-# Ruby dev env
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-export LDFLAGS="-L/opt/homebrew/opt/readline/lib:$LDFLAGS"
-export CPPFLAGS="-I/opt/homebrew/opt/readline/include:$CPPFLAGS"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/readline/lib/pkgconfig:$PKG_CONFIG_PATH" export optflags="-Wno-error=implicit-function-declaration"
-export LDFLAGS="-L/opt/homebrew/opt/libffi/lib:$LDFLAGS"
-export CPPFLAGS="-I/opt/homebrew/opt/libffi/include:$CPPFLAGS"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/libffi/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
@@ -284,7 +272,6 @@ export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
 DISABLE_AUTO_TITLE="true"
 function preexec() {
   timer=$(($(gdate +%s%0N)/1000000))
-  print -Pn "\e]0;$(print -rD basename $(PWD)) $1\a"
 }
 
 function precmd() {
@@ -298,5 +285,10 @@ function precmd() {
 }
 precmd
 
+function set_tab_name {
+  printf "\033]2;${1}\033\\"
+}
+
 # Autuin config
 eval "$(atuin init zsh)"
+eval "$(mise activate zsh)"
