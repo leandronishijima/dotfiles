@@ -45,3 +45,6 @@ keybind = ctrl+n>h=resize_split:left,30
 keybind = ctrl+n>l=resize_split:right,30
 keybind = ctrl+n>j=resize_split:down,20
 keybind = ctrl+n>k=resize_split:up,20
+
+## Unbind fullscreen command
+keybind = global:cmd+enter=unbind
