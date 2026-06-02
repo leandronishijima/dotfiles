@@ -138,6 +138,7 @@ alias gpl="git pull"
 alias gpu="git push"
 alias ga="git add ."
 alias gc="git checkout"
+alias gsw="git switch"
 alias lgit="lazygit"
 
 # kitty alias
