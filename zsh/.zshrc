@@ -293,3 +293,5 @@ function set_tab_name {
 # Autuin config
 eval "$(atuin init zsh)"
 eval "$(mise activate zsh)"
+
+export PATH="$HOME/.local/bin:$PATH"
