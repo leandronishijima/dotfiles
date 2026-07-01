@@ -10,7 +10,7 @@ after-login-command = []
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-  'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
+  'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0 ax_focus=off'
 ]
 
 # Start AeroSpace at login
@@ -23,7 +23,7 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
 # You can set 0 to disable the padding feature
-accordion-padding = 300
+accordion-padding = 80
 
 # Possible values: tiles|accordion
 default-root-container-layout = 'tiles'
@@ -38,7 +38,7 @@ default-root-container-orientation = 'auto'
 # See https://nikitabobko.github.io/AeroSpace/guide#on-focus-changed-callbacks
 # See https://nikitabobko.github.io/AeroSpace/commands#move-mouse
 # Fallback value (if you omit the key): on-focused-monitor-changed = []
-on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+on-focused-monitor-changed = []
 
 # You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
 # Useful if you don't use this macOS feature, but accidentally hit cmd-h or cmd-alt-h key
@@ -53,7 +53,15 @@ run = [
 ]
 
 [[on-window-detected]]
+if.app-id = 'com.cmuxterm.app'
+run = "move-node-to-workspace W"
+
+[[on-window-detected]]
 if.app-id = 'company.thebrowser.Browser'
+run = "move-node-to-workspace B"
+
+[[on-window-detected]]
+if.app-id = 'app.zen-browser.zen'
 run = "move-node-to-workspace B"
 
 [[on-window-detected]]
@@ -61,11 +69,15 @@ if.app-id = 'md.obsidian'
 run = "move-node-to-workspace O"
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'com.apple.ActivityMonitor'
+if.app-id = 'net.whatsapp.WhatsApp'
+run = "move-node-to-workspace M"
+
+[[on-window-detected]]
+if.app-id = 'com.apple.ActivityMonitor'
 run = "layout floating"
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'spotify'
+if.app-id = 'com.spotify.client'
 run = "move-node-to-workspace S"
 
 # [[on-window-detected]]
