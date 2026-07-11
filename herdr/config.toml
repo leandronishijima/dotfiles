@@ -9,7 +9,7 @@
 # Built-in themes: catppuccin, terminal, tokyo-night, dracula, nord,
 #                  gruvbox, one-dark, solarized, kanagawa, rose-pine,
 #                  vesper
-# name = "catppuccin"
+name = "kanagawa"
 
 # Follow host terminal light/dark appearance and switch Herdr UI themes.
 # Existing manual behavior is unchanged unless this is true.
@@ -25,6 +25,7 @@
 # red = "#ff6188"
 # green = "#a6e3a1"
 
+auto_switch = false
 [terminal]
 # Executable used for new interactive panes.
 # Empty means $SHELL, then /bin/sh.
@@ -59,7 +60,7 @@
 # Named punctuation such as minus, comma, ampersand, plus, and backtick is also accepted.
 # Most reliable direct bindings are ctrl+letter, function keys, and explicit modified chords.
 # alt+..., cmd/super, and punctuation-with-modifiers may depend on your terminal/tmux setup.
-# prefix = "ctrl+b"
+prefix = "ctrl+b"
 
 # Prefix-mode actions
 # help = "prefix+?"
@@ -82,7 +83,7 @@
 # focus_agent = ""        # optional indexed binding, e.g. "prefix+alt+1..9"
 # remote_image_paste = "ctrl+v" # only active in herdr --remote; empty disables raw-key image paste
 # new_tab = "prefix+c"
-# rename_tab = "prefix+shift+t"
+rename_tab = "prefix+shift+r"
 # previous_tab = "prefix+p"
 # next_tab = "prefix+n"
 # switch_tab = "prefix+1..9"
@@ -200,6 +201,7 @@
 # accent = "cyan"
 
 # Background notification popup delivery
+show_agent_labels_on_pane_borders = true
 [ui.toast]
 # off = disable pop-up notifications
 # herdr = show in-app toasts
