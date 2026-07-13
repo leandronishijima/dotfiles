@@ -44,10 +44,13 @@ rm $HOME/.config/atuin/config.toml && ln -s ~/.dotfiles/.config/atuin/config.tom
 onfig.toml
 
 # ghostty
-ln -s ~/.dotfiles/.config/ghostty/config $home/.config/ghostty/config
+ln -s ~/.dotfiles/.config/ghostty/config $HOME/.config/ghostty/config
 
 # cmux
-ln -s ~/.dotfiles/cmux/cmux.json $home/.config/cmux/cmux.json
+ln -s ~/.dotfiles/cmux/cmux.json $HOME/.config/cmux/cmux.json
+
+# herdr
+ln -s ~/.dotfiles/herdr/config.toml $HOME/.config/herdr/config.toml
 
 # Aerospace
 ln -s ~/.dotfiles/aerospace/.aerospace.toml $HOME/.aerospace.toml
