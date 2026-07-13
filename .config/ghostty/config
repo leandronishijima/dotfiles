@@ -35,9 +35,6 @@ keybind = ctrl+p>f=toggle_split_zoom
 keybind = ctrl+p>-=new_split:down
 
 ## Tabs commands
-keybind = ctrl+w>l=next_tab
-keybind = ctrl+w>h=previous_tab
-
 keybind = ctrl+option+l=next_tab
 keybind = ctrl+option+h=previous_tab
 
