@@ -164,7 +164,7 @@ alias railsc="rails c -- --noautocomplete"
 alias r="rails"
 
 # iSeatz aliases
-alias amex-run="z docker && docker compose run --publish 4002:4002 --rm --entrypoint bash lxp-amex-services"
+alias amex-run="z docker && docker compose run --name lxp-amex-services --publish 4002:4002 --rm --entrypoint bash lxp-amex-services"
 alias hotel-run="z docker && docker compose run --publish 4004:4000 --rm --entrypoint bash lxp-hotel-services"
 # alias setuplocalstack="docker compose run --rm --entrypoint "bash -c 'bash lxp-amex-services/cdk-amex-services/localstack/deploy.sh --skip-npm && cd lxp-slogs-cdk/localstack && bash deploy.sh'" cdk-apps"
 
