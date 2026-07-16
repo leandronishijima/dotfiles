@@ -9,7 +9,7 @@ window-decoration = none
 window-vsync = true
 window-padding-x = 5
 window-padding-y = 5
-window-save-state = always
+window-save-state = never
 
 shell-integration-features = no-title
 
@@ -39,9 +39,6 @@ keybind = ctrl+p>f=toggle_split_zoom
 keybind = ctrl+p>-=new_split:down
 
 ## Tabs commands
-keybind = ctrl+w>l=next_tab
-keybind = ctrl+w>h=previous_tab
-
 keybind = ctrl+option+l=next_tab
 keybind = ctrl+option+h=previous_tab
 
@@ -60,3 +57,14 @@ keybind = ctrl+n>k=resize_split:up,20
 
 ## Unbind fullscreen command
 keybind = global:cmd+enter=unbind
+
+## Unbind tab switching (herdr handles panes/agents now)
+keybind = cmd+1=unbind
+keybind = cmd+2=unbind
+keybind = cmd+3=unbind
+keybind = cmd+4=unbind
+keybind = cmd+5=unbind
+keybind = cmd+6=unbind
+keybind = cmd+7=unbind
+keybind = cmd+8=unbind
+keybind = cmd+9=unbind

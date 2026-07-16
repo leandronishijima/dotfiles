@@ -8,14 +8,14 @@ Personal macOS dotfiles for `leandro`. It is **not an application** — there is
 
 ## Deployment model
 
-The `symlinks` file (bash script, not currently executable — run via `bash symlinks`) is the single source of truth for how files in this repo map onto the live system. Each stanza is a `ln -s ~/.dotfiles/<path> <target-in-$HOME>` line, grouped by tool with a comment header (kitty, zsh/p10k, tmux, ranger, solargraph, git, lazygit, asdf, mise, zellij, wezterm, atuin, ghostty, cmux, herdr, aerospace, sketchybar).
+The `symlinks` file (bash script, not currently executable — run via `bash symlinks`) is the single source of truth for how files in this repo map onto the live system. Each stanza is a `ln -s ~/.dotfiles/<path> <target-in-$HOME>` line, grouped by tool with a comment header (kitty, neofetch, tmux, zsh/p10k, ranger, solargraph, git, lazygit, asdf-ruby default-gems, mise, zellij, wezterm, atuin, ghostty, cmux, claude, herdr, aerospace, sketchybar).
 
 When adding config for a new tool:
 1. Add the config file(s) under a new top-level directory named after the tool (mirrors existing layout: `toolname/config.ext`).
 2. Add a corresponding `ln -s` line to `symlinks` under a new comment header, following the existing style.
 3. The script is not idempotent (no `-f` on `ln`) — most existing lines assume the target doesn't already exist. The one exception is the Atuin block, which does `rm` then `ln -s` first. Follow that pattern if the target directory is likely to already contain a real file (e.g. one the app creates on first run).
 
-Some directories only hold documentation, not files that get symlinked, e.g. `git/README.md` (GPG commit-signing setup) and `homebrew/README.md` (Brewfile usage). Don't assume every directory has a matching `symlinks` entry.
+Some directories only hold documentation, not files that get symlinked, e.g. `git/README.md` (GPG commit-signing setup) and `homebrew/README.md` (Brewfile usage). Don't assume every directory has a matching `symlinks` entry — `alacritty/` (superseded by kitty/wezterm/ghostty), `exercism/` (a one-off `exercism configure` script), and `macos/` (currently empty) are present in the repo but intentionally have no `symlinks` line.
 
 ## Layout by tool
 
@@ -25,7 +25,7 @@ Some directories only hold documentation, not files that get symlinked, e.g. `gi
 - **aerospace/.aerospace.toml** — tiling window manager config (workspaces, keybindings, `on-window-detected` rules).
 - **herdr/config.toml** — large multi-section config (`[theme]`, `[terminal]`, `[keys]`, `[ui]`, `[session]`, `[remote]`, etc.) for the herdr terminal tool.
 - **mise/config.toml**, **asdf/** — tool version managers (mise is the newer, asdf the older/legacy one — both present).
-- **zellij/**, **wezterm/**, **lazygit/**, **cmux/** — single config file per tool, symlinked as-is.
+- **zellij/**, **wezterm/**, **lazygit/**, **cmux/**, **claude/settings.json** — single config file per tool, symlinked as-is (`claude/settings.json` deploys to `~/.claude/settings.json`, Claude Code's global settings).
 - **.gitconfig** — GPG commit signing (see `git/README.md` for setup steps), delta as pager/diff filter, an `includeIf` for a work-specific identity override at `~/workspace/arionkoder/iseatz/` (that referenced `.gitconfig-iseatz` file lives outside this repo).
 - **raycast/scripts/** — Raycast script-commands (Alfred-style launcher scripts).
 

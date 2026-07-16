@@ -49,6 +49,9 @@ ln -s ~/.dotfiles/.config/ghostty/config $HOME/.config/ghostty/config
 # cmux
 ln -s ~/.dotfiles/cmux/cmux.json $HOME/.config/cmux/cmux.json
 
+# claude
+ln -s ~/.dotfiles/claude/settings.json $HOME/.claude/settings.json
+
 # herdr
 ln -s ~/.dotfiles/herdr/config.toml $HOME/.config/herdr/config.toml
 

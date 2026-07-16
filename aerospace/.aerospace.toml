@@ -47,13 +47,6 @@ automatically-unhide-macos-hidden-apps = false
 
 [[on-window-detected]]
 if.app-id = "com.mitchellh.ghostty"
-run = [
-  'layout floating',
-  "move-node-to-workspace W",
-]
-
-[[on-window-detected]]
-if.app-id = 'com.cmuxterm.app'
 run = "move-node-to-workspace W"
 
 [[on-window-detected]]
