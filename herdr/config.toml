@@ -80,14 +80,14 @@ reload_config = "prefix+shift+s"
 # next_workspace = ""     # optional, unset by default
 # previous_agent = ""     # optional, unset by default
 # next_agent = ""         # optional, unset by default
-# focus_agent = ""        # optional indexed binding, e.g. "prefix+alt+1..9"
+focus_agent = "prefix+cmd+1..9"        # optional indexed binding, e.g. "prefix+alt+1..9"
 # remote_image_paste = "ctrl+v" # only active in herdr --remote; empty disables raw-key image paste
 # new_tab = "prefix+c"
 rename_tab = "prefix+shift+r"
 # previous_tab = "prefix+p"
 # next_tab = "prefix+n"
 # switch_tab = "prefix+1..9"
-switch_workspace = "prefix+shift+1..9"   # optional indexed binding, e.g. "prefix+shift+1..9"
+switch_workspace = "prefix+ctrl+1..9"   # optional indexed binding, e.g. "prefix+shift+1..9"
 # close_tab = "prefix+shift+x"
 # rename_pane = "prefix+shift+p"
 # edit_scrollback = "prefix+e"
@@ -107,8 +107,8 @@ switch_workspace = "prefix+shift+1..9"   # optional indexed binding, e.g. "prefi
 
 # Navigate-mode movement. These local shortcuts win while navigate mode is open.
 # They are independent from focus_pane_*. Do not include prefix+, esc, enter, tab, or 1..9 here.
-# navigate_workspace_up = "up"
-# navigate_workspace_down = "down"
+navigate_workspace_up = "k"
+navigate_workspace_down = "j"
 # navigate_pane_left = "h"      # left arrow always focuses the pane to the left
 # navigate_pane_down = "j"
 # navigate_pane_up = "k"
@@ -122,6 +122,11 @@ switch_workspace = "prefix+shift+1..9"   # optional indexed binding, e.g. "prefi
 # key = "prefix+alt+g"
 # type = "pane"
 # command = "lazygit"
+
+[[keys.command]]
+key = "prefix+shift+d"
+type = "plugin_action"
+command = "persiyanov.reviewr.toggle"
 
 # Legacy indexed shortcut config is still parsed for compatibility.
 # Prefer switch_tab, switch_workspace, and focus_agent for new configs.
@@ -210,6 +215,7 @@ show_agent_labels_on_pane_borders = true
 # delivery = "off"
 # delay_seconds = 1
 
+delivery = "herdr"
 [ui.toast.herdr]
 # position = "bottom-right"
 
