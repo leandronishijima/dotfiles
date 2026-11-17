@@ -1,3 +1,4 @@
+onboarding = false
 # herdr configuration
 # Place this file at ~/.config/herdr/config.toml
 
@@ -127,6 +128,12 @@ navigate_workspace_down = "j"
 key = "prefix+shift+d"
 type = "plugin_action"
 command = "persiyanov.reviewr.toggle"
+
+[[keys.command]]
+key = "prefix+a" # a for "automatic"
+type = "plugin_action"
+command = "herdr-automatic-rename.reset"
+description = "hand this tab's name back to automatic naming"
 
 # Legacy indexed shortcut config is still parsed for compatibility.
 # Prefer switch_tab, switch_workspace, and focus_agent for new configs.
