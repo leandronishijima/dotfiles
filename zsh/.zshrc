@@ -147,8 +147,9 @@ alias tabname="kitty @ set-tab-title"
 # :D
 alias :q="exit"
 
-# docker aliases
-alias dls="docker container ls -a"
+# podman aliases
+alias docker="podman"
+alias dls="podman container ls -a"
 
 # replacing cat
 alias cat="bat"
@@ -162,11 +163,6 @@ alias mph="iex -S mix phx.server"
 # Rails console without autocomplete
 alias railsc="rails c -- --noautocomplete"
 alias r="rails"
-
-# iSeatz aliases
-alias amex-run="z docker && docker compose run --name lxp-amex-services --publish 4002:4002 --rm --entrypoint bash lxp-amex-services"
-alias hotel-run="z docker && docker compose run --publish 4004:4000 --rm --entrypoint bash lxp-hotel-services"
-# alias setuplocalstack="docker compose run --rm --entrypoint "bash -c 'bash lxp-amex-services/cdk-amex-services/localstack/deploy.sh --skip-npm && cd lxp-slogs-cdk/localstack && bash deploy.sh'" cdk-apps"
 
 # csvlens alias
 alias csv="csvlens"
@@ -193,7 +189,7 @@ SPACESHIP_CHAR_SUFFIX=" "
 . $(brew --prefix)/etc/profile.d/z.sh
 
 # Docker platfor
-export DOCKER_DEFAULT_PLATFORM=linux/amd64
+# export DOCKER_DEFAULT_PLATFORM=linux/amd64
 
 # nvm path
 export NVM_DIR="$HOME/.nvm"
