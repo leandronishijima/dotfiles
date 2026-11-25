@@ -3,9 +3,6 @@
 	name = Leandro Nishijima
 	signingkey = 0F27E745524CD73B
 
-[includeIf "gitdir:/Users/leandro/workspace/arionkoder/iseatz/"]
-  path = .gitconfig-iseatz
-
 [commit]
 	gpgsign = true
 

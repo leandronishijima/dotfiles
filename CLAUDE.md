@@ -26,7 +26,7 @@ Some directories only hold documentation, not files that get symlinked, e.g. `gi
 - **herdr/config.toml** — large multi-section config (`[theme]`, `[terminal]`, `[keys]`, `[ui]`, `[session]`, `[remote]`, etc.) for the herdr terminal tool.
 - **mise/config.toml**, **asdf/** — tool version managers (mise is the newer, asdf the older/legacy one — both present).
 - **zellij/**, **wezterm/**, **lazygit/**, **cmux/**, **claude/settings.json** — single config file per tool, symlinked as-is (`claude/settings.json` deploys to `~/.claude/settings.json`, Claude Code's global settings).
-- **.gitconfig** — GPG commit signing (see `git/README.md` for setup steps), delta as pager/diff filter, an `includeIf` for a work-specific identity override at `~/workspace/arionkoder/iseatz/` (that referenced `.gitconfig-iseatz` file lives outside this repo).
+- **.gitconfig** — GPG commit signing (see `git/README.md` for setup steps), delta as pager/diff filter.
 - **raycast/scripts/** — Raycast script-commands (Alfred-style launcher scripts).
 
 ## Editing conventions
