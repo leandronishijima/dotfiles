@@ -55,6 +55,13 @@ ln -s ~/.dotfiles/claude/settings.json $HOME/.claude/settings.json
 # herdr
 ln -s ~/.dotfiles/herdr/config.toml $HOME/.config/herdr/config.toml
 
+# superfile (spf)
+rm "$HOME/Library/Application Support/superfile/config.toml" && ln -s ~/.dotfiles/superfile/config.toml "$HOME/Library/Application Support/superfile/config.toml"
+rm "$HOME/Library/Application Support/superfile/hotkeys.toml" && ln -s ~/.dotfiles/superfile/hotkeys.toml "$HOME/Library/Application Support/superfile/hotkeys.toml"
+
+# rex
+rm $HOME/.config/rex/init.lua && ln -s ~/.dotfiles/rex/init.lua $HOME/.config/rex/init.lua
+
 # Aerospace
 ln -s ~/.dotfiles/aerospace/.aerospace.toml $HOME/.aerospace.toml
 
